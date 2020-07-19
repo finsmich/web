@@ -1,2 +1,2 @@
-# web-development.
+# web
 存放网站文件
