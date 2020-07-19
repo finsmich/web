@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>旋转魔方</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="bg">
+		<div class="box">
+			<div class="box-page top"></div>
+			<div class="box-page bottom"></div>
+			<div class="box-page left"></div>
+			<div class="box-page right"></div>
+			<div class="box-page before"></div>
+			<div class="box-page after"></div>
+		</div>
+	</div>
+	<div style="width: 100px;height: 50px;font-size: 24px;float: left;"><h1>梁裕</h1></div>
+	<script type="text/javascript">
+	var arr = document.querySelectorAll(".box-page");
+	for(var n = 0; n < arr.length; n++){
+		for(var h = 0; h < 3; h++){
+			for(var l = 0; l < 3; l++){
+				var divs = document.createElement("div");
+				divs.style.cssText = "width:100px; height:100px; border:1px solid #fff; box-sizing:border-box; position:absolute; background-image:url(img/a"+n+".jpg); background-size:300px 300px;";
+				arr[n].appendChild(divs);
+
+				divs.style.left = l*100+"px";
+				divs.style.top = h*100+"px";
+
+				divs.style.backgroundPositionX = -l*100+"px";
+				divs.style.backgroundPositionY = -h*100+"px";
+			}
+		}
+	}
+	</script>
+</body>
+</html>
