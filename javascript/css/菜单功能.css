@@ -1,0 +1,47 @@
+*{ margin: 0; padding: 0;}
+#container{
+    width: 200px;
+    height: 100vh;
+    background-color:#030e11;
+}
+.menuName{
+    width: 200px;
+    height: 40px;
+    overflow: hidden;
+}
+.menuButton{
+    width: 200px;
+    height: 40px;
+    background-color: lightblue;
+    font-size: 18px;
+    font-weight: bold;
+}
+.menuButton embed{
+    float: right;
+    width: 20px;
+    height: 20px;
+    transform: rotate(0deg);
+    pointer-events: none;
+}
+.menuList{
+    width: 200px;
+}
+.menuList li{
+    width: 200px;
+    height: 40px;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    background-color: gainsboro;
+    list-style: none;
+}
+.menuList li a{
+    display: block;
+    width: 160px;
+    color: #d3d7d4;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #464547;
+}

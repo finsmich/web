@@ -1,0 +1,43 @@
+*{ margin: 0; padding: 0;}
+li{
+    list-style: none;
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+#container{
+    width: 500px;
+    height: max-content;
+    border: 1px solid black;
+    display: grid;
+    justify-items: center;
+}
+#container p{
+    font-weight: bold;
+    margin-top: 20px;
+}
+#city{
+}
+#city li{
+    width: 50px;
+    height: 40px;
+    float: left;
+    background-color: lightgreen;
+    margin: 10px 10px;
+    display: grid;
+    place-items: center;
+}
+#btn{
+    width: 250px;
+    height: 250px;
+    /* border: 1px solid black; */
+    display: grid;
+    justify-items: center;
+}
+#btn button{
+    width: 250px;
+    display: block;
+    margin: 10px 0;
+}

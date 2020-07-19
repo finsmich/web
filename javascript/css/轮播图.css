@@ -1,0 +1,47 @@
+*{ margin: 0; padding: 0;}
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+#container{
+    width: 240px;
+    height: 220px;
+}
+.img{
+    width: 240px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+}
+.img ul{
+    width: 1200px;
+    height: 220px;
+    position: absolute;
+}
+.img ul li{
+    list-style: none;
+    height: 220px;
+    float: left;
+    margin: 0 10px;
+    border: 10px solid lightgreen;
+    box-sizing: border-box;
+}
+.alink_father{
+    width: 240px;
+    height: 15px;
+    display: grid;
+    justify-items: center;
+}
+.alink a{
+    float: left;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: lightpink;
+}
+.alink a:hover{
+    background-color: black;
+}

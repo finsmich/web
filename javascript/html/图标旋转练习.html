@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            transform: rotate(0deg);
+            /* pointer-events: none; //使用embed时可以用这个属性阻止其无法被点击 */ 
+        }
+        #button{
+            width: 200px;
+            background-color: linen;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <embed src="img/arrow.svg" id="box">
+    <button id="button">点击旋转</button>
+
+    <script src="../js/tool.js"></script>
+    <script>
+        let box = document.getElementById("box");
+        let button = document.getElementById("button");
+        button.onclick = function(){
+            let rv= rotateValue(box); //获取目标元素当前的角度
+            if(rv == 0){
+                rotate(box,90,10,function(){});
+            }else rotate(box,0,10,function(){});
+        };
+    </script>
+</body>
+</html>

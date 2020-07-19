@@ -1,0 +1,25 @@
+*{ margin: 0; padding: 0;}
+html,body{ width: 100vh; height: 100vh;}
+#red{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px 0;
+    position: absolute;
+    /* left: 100px; */
+}
+#yellow{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 200px;
+}
+p{
+    width: 1px;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    left: 800px;
+    top: 0;
+}
